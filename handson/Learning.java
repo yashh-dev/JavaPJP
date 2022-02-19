@@ -225,3 +225,19 @@ class WrapperClass {
         System.out.println(Math.rint(f));
     }
 }
+
+class Test {
+    void m1(int i1) {
+        System.out.println("int");
+    }
+
+    void m1(Integer l) {
+        System.out.println("Integer");
+    }
+
+    public static void main(String[] args) {
+        int x = 10;
+        Integer num = new Integer(10);
+        System.out.println(num.equals(x));
+    }
+}
